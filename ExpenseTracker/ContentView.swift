@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("isFirstTime") private var isFirstTime:Bool =  true
+    
+    @State private var activeTab: Tab = .recents
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $activeTab)
+            {
+            Text("Racents").tabItem { Tab.recents.tabContent }.tag(Tab.recents)
+            Text("Search").tabItem { Tab.search.tabContent }.tag(Tab.search)
+            Text("Charts").tabItem { Tab.charts.tabContent }.tag(Tab.charts)
+            Text("Settings").tabItem { Tab.settings.tabContent }.tag(Tab.settings)
         }
-        .padding()
+            .sheet(isPresented: $isFirstTime, content: {
+                IntroView()
+                    .interactiveDismissDisabled()
+            })
     }
 }
 
