@@ -19,6 +19,9 @@
 		E8BD18AD2C60FCCE00D95FD6 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18AC2C60FCCE00D95FD6 /* TintColor.swift */; };
 		E8BD18B02C60FEF200D95FD6 /* Recents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18AF2C60FEF200D95FD6 /* Recents.swift */; };
 		E8BD18B22C60FF0500D95FD6 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18B12C60FF0500D95FD6 /* Search.swift */; };
+		E8BD18B42C60FF3800D95FD6 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18B32C60FF3800D95FD6 /* Graphs.swift */; };
+		E8BD18B62C60FF4500D95FD6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18B52C60FF4500D95FD6 /* Settings.swift */; };
+		E8BD18B82C61014B00D95FD6 /* View+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18B72C61014B00D95FD6 /* View+Extenstions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		E8BD18AC2C60FCCE00D95FD6 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
 		E8BD18AF2C60FEF200D95FD6 /* Recents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recents.swift; sourceTree = "<group>"; };
 		E8BD18B12C60FF0500D95FD6 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		E8BD18B32C60FF3800D95FD6 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
+		E8BD18B52C60FF4500D95FD6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		E8BD18B72C61014B00D95FD6 /* View+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extenstions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				E8BD18A42C60ECC000D95FD6 /* Constants.swift */,
+				E8BD18B72C61014B00D95FD6 /* View+Extenstions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -119,6 +126,8 @@
 			children = (
 				E8BD18AF2C60FEF200D95FD6 /* Recents.swift */,
 				E8BD18B12C60FF0500D95FD6 /* Search.swift */,
+				E8BD18B32C60FF3800D95FD6 /* Graphs.swift */,
+				E8BD18B52C60FF4500D95FD6 /* Settings.swift */,
 			);
 			path = TabViews;
 			sourceTree = "<group>";
@@ -196,12 +205,15 @@
 				E8BD18AD2C60FCCE00D95FD6 /* TintColor.swift in Sources */,
 				E8BD18B02C60FEF200D95FD6 /* Recents.swift in Sources */,
 				E8BD18AB2C60FC2300D95FD6 /* Transaction.swift in Sources */,
+				E8BD18B82C61014B00D95FD6 /* View+Extenstions.swift in Sources */,
 				E8BD18A22C60E98700D95FD6 /* IntroView.swift in Sources */,
 				E8BD18932C60E8EC00D95FD6 /* ContentView.swift in Sources */,
 				E8BD18A72C60F0B200D95FD6 /* Tab.swift in Sources */,
+				E8BD18B62C60FF4500D95FD6 /* Settings.swift in Sources */,
 				E8BD18912C60E8EC00D95FD6 /* ExpenseTrackerApp.swift in Sources */,
 				E8BD18B22C60FF0500D95FD6 /* Search.swift in Sources */,
 				E8BD18A52C60ECC000D95FD6 /* Constants.swift in Sources */,
+				E8BD18B42C60FF3800D95FD6 /* Graphs.swift in Sources */,
 				E8BD18A92C60FBD500D95FD6 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

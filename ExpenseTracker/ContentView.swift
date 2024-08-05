@@ -14,10 +14,10 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $activeTab)
             {
-            Text("Racents").tabItem { Tab.recents.tabContent }.tag(Tab.recents)
-            Text("Search").tabItem { Tab.search.tabContent }.tag(Tab.search)
-            Text("Charts").tabItem { Tab.charts.tabContent }.tag(Tab.charts)
-            Text("Settings").tabItem { Tab.settings.tabContent }.tag(Tab.settings)
+            Recents().tabItem { Tab.recents.tabContent }.tag(Tab.recents)
+           Search().tabItem { Tab.search.tabContent }.tag(Tab.search)
+            Graphs().tabItem { Tab.charts.tabContent }.tag(Tab.charts)
+            Settings().tabItem { Tab.settings.tabContent }.tag(Tab.settings)
         }
             .sheet(isPresented: $isFirstTime, content: {
                 IntroView()
