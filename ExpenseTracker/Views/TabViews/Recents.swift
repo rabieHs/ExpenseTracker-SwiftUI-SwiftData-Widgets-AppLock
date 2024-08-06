@@ -11,18 +11,44 @@ struct Recents: View {
     
     @AppStorage("userName") private var userName: String = ""
     
+    @State private var startDate: Date = .now.startOfMonth
+    @State private var endDate: Date = .now.endOfMonth
+    @State private var selectedCategory: Category = .expense
+    
+    // animation
+    @Namespace private var animation
+    
     var body: some View {
         GeometryReader {
             let size = $0.size
             NavigationStack{
                 ScrollView(.vertical){
-                    LazyVStack(spacing:10){
+                    LazyVStack(spacing:10,pinnedViews: [.sectionHeaders]){
                         Section{
                             Button{
                                 
                             }label: {
-                                Text("Button")
+                                Text("\(format(date: startDate, format: "dd MMM yy")) to \(format(date: endDate, format: "dd MMM yy"))")
+                                    .font(.caption2)
+                                    .foregroundStyle(.gray)
+                                
                             }
+                            .hSpacing(.leading)
+                            
+                            CardView(income: 150, expense: 200)
+                            
+                            customSegmentedControl()
+                                .padding(.bottom,10)
+                            
+                            ForEach(sampleTransactions.filter({$0.category == selectedCategory.rawValue})){transaction in
+                                TransactionCardView(transaction: transaction)
+        
+                                    
+                            }.onDelete { set in
+                                sampleTransactions.remove(atOffsets: set)
+                            }
+                            
+                            
                         }header: {
                             HeaderView(size)
                         }
@@ -30,7 +56,9 @@ struct Recents: View {
                     .padding(15)
                     
                 }
+                .background(.gray.opacity(0.15))
             }
+          
         }
     }
     
@@ -88,6 +116,36 @@ struct Recents: View {
             
                 
         }
+        
+    }
+    
+    @ViewBuilder
+    func customSegmentedControl()-> some View {
+        HStack(spacing : 0){
+            ForEach(Category.allCases, id: \.rawValue){category in
+                Text(category.rawValue)
+                    .hSpacing()
+                    .padding(.vertical,10)
+                    .background{
+                        if category == selectedCategory {
+                            Capsule().fill(.background)
+                                .matchedGeometryEffect(id: "ACTIVETAB", in: animation)
+                        }
+                    }
+                    .contentShape(.capsule)
+                    .onTapGesture {
+                        withAnimation(.snappy) {
+                            selectedCategory = category
+                        }
+                    }
+            }
+        }
+        .background(.gray.opacity(0.15), in: .capsule)
+        .padding(.top,5)
+    }
+    
+    @ViewBuilder
+    func datefilterView()-> some View {
         
     }
     

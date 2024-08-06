@@ -22,6 +22,10 @@
 		E8BD18B42C60FF3800D95FD6 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18B32C60FF3800D95FD6 /* Graphs.swift */; };
 		E8BD18B62C60FF4500D95FD6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18B52C60FF4500D95FD6 /* Settings.swift */; };
 		E8BD18B82C61014B00D95FD6 /* View+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18B72C61014B00D95FD6 /* View+Extenstions.swift */; };
+		E8BD18BA2C6244CC00D95FD6 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18B92C6244CC00D95FD6 /* Date+Extension.swift */; };
+		E8BD18BD2C6247E900D95FD6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18BC2C6247E900D95FD6 /* CardView.swift */; };
+		E8BD18BF2C62559200D95FD6 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18BE2C62559200D95FD6 /* TransactionCardView.swift */; };
+		E8BD18C12C625DF800D95FD6 /* CustomSwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C02C625DF800D95FD6 /* CustomSwipeActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		E8BD18B32C60FF3800D95FD6 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
 		E8BD18B52C60FF4500D95FD6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E8BD18B72C61014B00D95FD6 /* View+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extenstions.swift"; sourceTree = "<group>"; };
+		E8BD18B92C6244CC00D95FD6 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		E8BD18BC2C6247E900D95FD6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E8BD18BE2C62559200D95FD6 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		E8BD18C02C625DF800D95FD6 /* CustomSwipeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwipeActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 		E8BD189E2C60E96000D95FD6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8BD18BB2C6247CA00D95FD6 /* Helpers */,
 				E8BD18AE2C60FEE300D95FD6 /* TabViews */,
 				E8BD18A12C60E98700D95FD6 /* IntroView.swift */,
 			);
@@ -117,6 +126,7 @@
 			children = (
 				E8BD18A42C60ECC000D95FD6 /* Constants.swift */,
 				E8BD18B72C61014B00D95FD6 /* View+Extenstions.swift */,
+				E8BD18B92C6244CC00D95FD6 /* Date+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -130,6 +140,16 @@
 				E8BD18B52C60FF4500D95FD6 /* Settings.swift */,
 			);
 			path = TabViews;
+			sourceTree = "<group>";
+		};
+		E8BD18BB2C6247CA00D95FD6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E8BD18BC2C6247E900D95FD6 /* CardView.swift */,
+				E8BD18BE2C62559200D95FD6 /* TransactionCardView.swift */,
+				E8BD18C02C625DF800D95FD6 /* CustomSwipeActions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,15 +226,19 @@
 				E8BD18B02C60FEF200D95FD6 /* Recents.swift in Sources */,
 				E8BD18AB2C60FC2300D95FD6 /* Transaction.swift in Sources */,
 				E8BD18B82C61014B00D95FD6 /* View+Extenstions.swift in Sources */,
+				E8BD18BD2C6247E900D95FD6 /* CardView.swift in Sources */,
 				E8BD18A22C60E98700D95FD6 /* IntroView.swift in Sources */,
 				E8BD18932C60E8EC00D95FD6 /* ContentView.swift in Sources */,
 				E8BD18A72C60F0B200D95FD6 /* Tab.swift in Sources */,
+				E8BD18C12C625DF800D95FD6 /* CustomSwipeActions.swift in Sources */,
 				E8BD18B62C60FF4500D95FD6 /* Settings.swift in Sources */,
 				E8BD18912C60E8EC00D95FD6 /* ExpenseTrackerApp.swift in Sources */,
 				E8BD18B22C60FF0500D95FD6 /* Search.swift in Sources */,
 				E8BD18A52C60ECC000D95FD6 /* Constants.swift in Sources */,
+				E8BD18BA2C6244CC00D95FD6 /* Date+Extension.swift in Sources */,
 				E8BD18B42C60FF3800D95FD6 /* Graphs.swift in Sources */,
 				E8BD18A92C60FBD500D95FD6 /* Category.swift in Sources */,
+				E8BD18BF2C62559200D95FD6 /* TransactionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
