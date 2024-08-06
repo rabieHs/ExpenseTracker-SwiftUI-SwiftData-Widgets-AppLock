@@ -43,8 +43,8 @@ struct Recents: View {
                             
                             ForEach(sampleTransactions.filter({$0.category == selectedCategory.rawValue})){transaction in
                                 TransactionCardView(transaction: transaction)
-                                
-                                
+        
+                                    
                             }
                             
                             
@@ -54,7 +54,7 @@ struct Recents: View {
                     }
                     .padding(15)
                     
-                }}
+                }
                 .background(.gray.opacity(0.15))
                 .blur(radius: showFilterView ?  5 : 0)
                 .disabled(showFilterView)
@@ -67,16 +67,12 @@ struct Recents: View {
                                 startDate = start
                                 endDate = end
                                 showFilterView = false
-                            }, onClose: {showFilterView = false
-                            })   .transition(.move(edge: .leading))
-                           
-                               
+                            }, onClose: {showFilterView = false})
+                                .transition(.move(edge: .leading))
                         }
-                          
                     }
-                 
                 }
-            
+            }
           
         }
     }
