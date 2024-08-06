@@ -13,6 +13,7 @@ struct Recents: View {
     
     @State private var startDate: Date = .now.startOfMonth
     @State private var endDate: Date = .now.endOfMonth
+    @State private var showFilterView: Bool = false
     @State private var selectedCategory: Category = .expense
     
     // animation
@@ -26,7 +27,7 @@ struct Recents: View {
                     LazyVStack(spacing:10,pinnedViews: [.sectionHeaders]){
                         Section{
                             Button{
-                                
+                                showFilterView = true
                             }label: {
                                 Text("\(format(date: startDate, format: "dd MMM yy")) to \(format(date: endDate, format: "dd MMM yy"))")
                                     .font(.caption2)
@@ -42,10 +43,8 @@ struct Recents: View {
                             
                             ForEach(sampleTransactions.filter({$0.category == selectedCategory.rawValue})){transaction in
                                 TransactionCardView(transaction: transaction)
-        
-                                    
-                            }.onDelete { set in
-                                sampleTransactions.remove(atOffsets: set)
+                                
+                                
                             }
                             
                             
@@ -55,9 +54,29 @@ struct Recents: View {
                     }
                     .padding(15)
                     
-                }
+                }}
                 .background(.gray.opacity(0.15))
-            }
+                .blur(radius: showFilterView ?  5 : 0)
+                .disabled(showFilterView)
+                .overlay {
+                    ZStack{
+                        if showFilterView{
+                            DateFilterView(start: startDate, end: endDate, onSubmit: {
+                                start,end in
+                                
+                                startDate = start
+                                endDate = end
+                                showFilterView = false
+                            }, onClose: {showFilterView = false
+                            })   .transition(.move(edge: .leading))
+                           
+                               
+                        }
+                          
+                    }
+                 
+                }
+            
           
         }
     }
@@ -144,10 +163,7 @@ struct Recents: View {
         .padding(.top,5)
     }
     
-    @ViewBuilder
-    func datefilterView()-> some View {
-        
-    }
+  
     
     func headerBGOpacity(_ proxy: GeometryProxy)->CGFloat {
         let minY = proxy.frame(in: .scrollView).minY+safeArea.top
