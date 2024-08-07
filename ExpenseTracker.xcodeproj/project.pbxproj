@@ -27,6 +27,7 @@
 		E8BD18BF2C62559200D95FD6 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18BE2C62559200D95FD6 /* TransactionCardView.swift */; };
 		E8BD18C12C625DF800D95FD6 /* CustomSwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C02C625DF800D95FD6 /* CustomSwipeActions.swift */; };
 		E8BD18C32C62BE2500D95FD6 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C22C62BE2500D95FD6 /* DateFilterView.swift */; };
+		E8BD18C52C638E8600D95FD6 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C42C638E8600D95FD6 /* LockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		E8BD18BE2C62559200D95FD6 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		E8BD18C02C625DF800D95FD6 /* CustomSwipeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwipeActions.swift; sourceTree = "<group>"; };
 		E8BD18C22C62BE2500D95FD6 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
+		E8BD18C42C638E8600D95FD6 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				E8BD18BE2C62559200D95FD6 /* TransactionCardView.swift */,
 				E8BD18C02C625DF800D95FD6 /* CustomSwipeActions.swift */,
 				E8BD18C22C62BE2500D95FD6 /* DateFilterView.swift */,
+				E8BD18C42C638E8600D95FD6 /* LockView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				E8BD18912C60E8EC00D95FD6 /* ExpenseTrackerApp.swift in Sources */,
 				E8BD18B22C60FF0500D95FD6 /* Search.swift in Sources */,
 				E8BD18A52C60ECC000D95FD6 /* Constants.swift in Sources */,
+				E8BD18C52C638E8600D95FD6 /* LockView.swift in Sources */,
 				E8BD18BA2C6244CC00D95FD6 /* Date+Extension.swift in Sources */,
 				E8BD18B42C60FF3800D95FD6 /* Graphs.swift in Sources */,
 				E8BD18A92C60FBD500D95FD6 /* Category.swift in Sources */,
@@ -379,6 +383,7 @@
 				DEVELOPMENT_TEAM = 9ZR9YLQLYW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Lock the App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,6 +413,7 @@
 				DEVELOPMENT_TEAM = 9ZR9YLQLYW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Lock the App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
