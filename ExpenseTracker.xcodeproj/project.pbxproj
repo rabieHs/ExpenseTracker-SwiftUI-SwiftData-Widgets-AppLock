@@ -29,7 +29,7 @@
 		E8BD18C32C62BE2500D95FD6 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C22C62BE2500D95FD6 /* DateFilterView.swift */; };
 		E8BD18C52C638E8600D95FD6 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C42C638E8600D95FD6 /* LockView.swift */; };
 		E8BD18C72C64D83800D95FD6 /* NewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C62C64D83800D95FD6 /* NewExpenseView.swift */; };
-		E8BD18C92C6524A100D95FD6 /* FilterExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C82C6524A100D95FD6 /* FilterExpenseView.swift */; };
+		E8BD18C92C6524A100D95FD6 /* FilterTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C82C6524A100D95FD6 /* FilterTransactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +56,7 @@
 		E8BD18C22C62BE2500D95FD6 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 		E8BD18C42C638E8600D95FD6 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		E8BD18C62C64D83800D95FD6 /* NewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseView.swift; sourceTree = "<group>"; };
-		E8BD18C82C6524A100D95FD6 /* FilterExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterExpenseView.swift; sourceTree = "<group>"; };
+		E8BD18C82C6524A100D95FD6 /* FilterTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 				E8BD18C02C625DF800D95FD6 /* CustomSwipeActions.swift */,
 				E8BD18C22C62BE2500D95FD6 /* DateFilterView.swift */,
 				E8BD18C42C638E8600D95FD6 /* LockView.swift */,
-				E8BD18C82C6524A100D95FD6 /* FilterExpenseView.swift */,
+				E8BD18C82C6524A100D95FD6 /* FilterTransactionView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 				E8BD18B62C60FF4500D95FD6 /* Settings.swift in Sources */,
 				E8BD18912C60E8EC00D95FD6 /* ExpenseTrackerApp.swift in Sources */,
 				E8BD18B22C60FF0500D95FD6 /* Search.swift in Sources */,
-				E8BD18C92C6524A100D95FD6 /* FilterExpenseView.swift in Sources */,
+				E8BD18C92C6524A100D95FD6 /* FilterTransactionView.swift in Sources */,
 				E8BD18A52C60ECC000D95FD6 /* Constants.swift in Sources */,
 				E8BD18C52C638E8600D95FD6 /* LockView.swift in Sources */,
 				E8BD18BA2C6244CC00D95FD6 /* Date+Extension.swift in Sources */,
