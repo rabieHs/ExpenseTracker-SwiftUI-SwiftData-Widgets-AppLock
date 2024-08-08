@@ -38,18 +38,20 @@ struct Recents: View {
                             }
                             .hSpacing(.leading)
                             
-                            CardView(income: 150, expense: 200)
-                            
-                            customSegmentedControl()
-                                .padding(.bottom,10)
-                            
-                            ForEach(transactions.filter({$0.category == selectedCategory.rawValue})){transaction in
-                                NavigationLink {
-                                    NewExpenseView(editTransaction: transaction)
-                                } label: {
-                                    TransactionCardView(transaction: transaction)
-                                }
-                                .buttonStyle(.plain)
+                           
+                            FilterExpenseView(startDate: startDate, endDate: endDate) { transactions in
+                                CardView(income: total(transactions, category: .income), expense: total(transactions, category: .expense))
+                                customSegmentedControl()
+                                    .padding(.bottom,10)
+                                
+                                ForEach(transactions.filter({$0.category == selectedCategory.rawValue})){transaction in
+                                    NavigationLink(value:transaction) {
+                                      
+                                        TransactionCardView(transaction: transaction)
+                                    }
+                                    .buttonStyle(.plain)
+                            }
+                         
                                 
 
         
@@ -67,6 +69,11 @@ struct Recents: View {
                 .background(.gray.opacity(0.15))
                 .blur(radius: showFilterView ?  5 : 0)
                 .disabled(showFilterView)
+                .navigationDestination(for: Transaction.self, destination: { transaction  in
+                    NewExpenseView(editTransaction: transaction)
+                    
+                })
+                
                 .overlay {
                     ZStack{
                         if showFilterView{
