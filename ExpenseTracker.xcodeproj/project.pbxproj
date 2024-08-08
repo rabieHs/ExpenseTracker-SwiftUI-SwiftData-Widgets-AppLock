@@ -28,6 +28,7 @@
 		E8BD18C12C625DF800D95FD6 /* CustomSwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C02C625DF800D95FD6 /* CustomSwipeActions.swift */; };
 		E8BD18C32C62BE2500D95FD6 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C22C62BE2500D95FD6 /* DateFilterView.swift */; };
 		E8BD18C52C638E8600D95FD6 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C42C638E8600D95FD6 /* LockView.swift */; };
+		E8BD18C72C64D83800D95FD6 /* NewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD18C62C64D83800D95FD6 /* NewExpenseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		E8BD18C02C625DF800D95FD6 /* CustomSwipeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwipeActions.swift; sourceTree = "<group>"; };
 		E8BD18C22C62BE2500D95FD6 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 		E8BD18C42C638E8600D95FD6 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		E8BD18C62C64D83800D95FD6 /* NewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E8BD18BB2C6247CA00D95FD6 /* Helpers */,
 				E8BD18AE2C60FEE300D95FD6 /* TabViews */,
 				E8BD18A12C60E98700D95FD6 /* IntroView.swift */,
+				E8BD18C62C64D83800D95FD6 /* NewExpenseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				E8BD18BD2C6247E900D95FD6 /* CardView.swift in Sources */,
 				E8BD18A22C60E98700D95FD6 /* IntroView.swift in Sources */,
 				E8BD18932C60E8EC00D95FD6 /* ContentView.swift in Sources */,
+				E8BD18C72C64D83800D95FD6 /* NewExpenseView.swift in Sources */,
 				E8BD18A72C60F0B200D95FD6 /* Tab.swift in Sources */,
 				E8BD18C12C625DF800D95FD6 /* CustomSwipeActions.swift in Sources */,
 				E8BD18B62C60FF4500D95FD6 /* Settings.swift in Sources */,
